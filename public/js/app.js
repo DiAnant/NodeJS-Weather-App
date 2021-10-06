@@ -3,13 +3,14 @@ const search = document.querySelector('input');
 const mssgOne = document.querySelector('#mssg1');
 
 const printJSON = (data) => {
-    let string = "";
-    for(key in data){
-        string += '<b>' + key;
-        string += ' : </b>';
-        string += data[key];
-        string += '<br>';
-    }
+
+    let string = "You searched weather for location <b>" + data['locationName'] + 
+    ".</b> Current weather can be described as <b>" + data['weatherDescription'] + 
+     "</b> and local time is <b>" + data['localTime'] + "</b>. The current temprature \
+     is <b>" + data['currentTemperature'] + " degrees</b> celsius and it feels \
+     like <b>" + data['feelsLike'] + " degrees</b> celsius. Chances of precipitation\
+     stand at about <b>" + data['chancesOfRain'] + "</b>.";
+    
     return string;
 };
 
