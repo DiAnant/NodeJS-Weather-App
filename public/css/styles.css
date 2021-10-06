@@ -76,7 +76,7 @@ form{
     margin-top: 5%;
 }
 
-#about{
+.normalText{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1.3em;
     color: #333333;

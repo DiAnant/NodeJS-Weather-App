@@ -39,7 +39,7 @@ app.get('/about', (req, res) => {
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
-        mssg: "Help Yourself Ser!",
+        mssg: "If You Aren't Going to Help Yourself, Nobody Will!",
         name: '@DiAnant',
     });
 });
